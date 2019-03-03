@@ -1,0 +1,17 @@
+--------- beginning of crash
+02-12 12:48:37.273  3277  3277 E audit   : type=1400 audit(1550004517.259:244): avc:  denied  { search } for  pid=21623 comm="crash_dump32" name="com.google.android.gms" dev="dm-1" ino=327907 scontext=u:r:crash_dump:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0 SEPF_SM-G930F_8.0.0_0007 audit_filtered
+02-12 12:48:37.273  3277  3277 E audit   : type=1300 audit(1550004517.259:244): arch=40000028 syscall=322 per=8 success=no exit=-13 a0=ffffff9c a1=e912a3c0 a2=20000 a3=0 items=0 ppid=1 pid=21623 auid=4294967295 uid=10608 gid=10608 euid=10608 suid=10608 fsuid=10608 egid=10608 sgid=10608 fsgid=10608 tty=(none) ses=4294967295 comm="crash_dump32" exe="/system/bin/crash_dump32" subj=u:r:crash_dump:s0:c512,c768 key=(null)
+02-12 12:48:37.273  3277  3277 E audit   : type=1400 audit(1550004517.269:245): avc:  denied  { search } for  pid=21623 comm="crash_dump32" name="com.google.android.gms" dev="dm-1" ino=327907 scontext=u:r:crash_dump:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0 SEPF_SM-G930F_8.0.0_0007 audit_filtered
+02-12 12:48:37.273  3277  3277 E audit   : type=1300 audit(1550004517.269:245): arch=40000028 syscall=322 per=8 success=no exit=-13 a0=ffffff9c a1=e912a6c0 a2=20000 a3=0 items=0 ppid=1 pid=21623 auid=4294967295 uid=10608 gid=10608 euid=10608 suid=10608 fsuid=10608 egid=10608 sgid=10608 fsgid=10608 tty=(none) ses=4294967295 comm="crash_dump32" exe="/system/bin/crash_dump32" subj=u:r:crash_dump:s0:c512,c768 key=(null)
+02-12 12:48:37.344 21623 21623 I crash_dump32: obtaining output fd from tombstoned
+02-12 12:48:37.353  3342  3342 I /system/bin/tombstoned: received crash request for pid 15385
+02-12 12:48:37.357 21623 21623 I crash_dump32: performing dump of process 15385 (target tid = 15415)
+02-12 12:48:40.168  3636 21626 W ActivityManager: crash : net.liveplanet.app.debug,0
+02-12 12:48:40.278  3636  3658 I ActivityManager: Showing crash dialog for package net.liveplanet.app.debug u0
+02-12 12:48:40.849  3636  3657 W BroadcastQueue: Skipping deliver [foreground] BroadcastRecord{b365853 u-1 android.intent.action.CONFIGURATION_CHANGED} to ReceiverList{d54290c 15385 net.liveplanet.app.debug/10608/u0 remote:205dc3f}: process gone or crashing
+02-12 12:48:40.851  3636  3657 W BroadcastQueue: Skipping deliver [foreground] BroadcastRecord{83f1590 u-1 android.intent.action.CONFIGURATION_CHANGED} to ReceiverList{d54290c 15385 net.liveplanet.app.debug/10608/u0 remote:205dc3f}: process gone or crashing
+02-12 12:48:41.430 21667 21685 W DynamiteModule: Local module descriptor class for com.google.android.gms.crash not found.
+02-12 12:48:41.439 21667 21685 I DynamiteModule: Considering local module com.google.android.gms.crash:0 and remote module com.google.android.gms.crash:215
+02-12 12:48:41.439 21667 21685 I DynamiteModule: Selected remote version of com.google.android.gms.crash, version >= 215
+02-12 12:48:41.506 21667 21686 W DynamiteModule: Local module descriptor class for com.google.android.gms.crash not found.
+02-12 12:48:56.407 21667 21743 I FirebaseCrash: Sending crashes
